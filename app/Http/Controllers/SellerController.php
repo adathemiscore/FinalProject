@@ -38,8 +38,8 @@ class SellerController extends Controller
         // return $request->all();
 
         $this->validate($request,[
-            'name'=>'required|string|max:40',
-            'description'=>'required|string|max:40',
+            'name'=>'required|string|max:120',
+            'description'=>'required|string|max:120',
             'price'=>'required|numeric|max:9999999999|gt:0',
             // 'available'=>'required',
             'picture'=>'required|mimes:,jpg,png,jpeg',

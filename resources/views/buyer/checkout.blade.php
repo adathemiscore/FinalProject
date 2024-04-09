@@ -84,7 +84,7 @@
                             <label for="card" class="col-md-4 col-form-label text-md-end">{{ __('Card Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="card" maxlength="16"  type="text" class="form-control @error('card') is-invalid @enderror"  name="card" value="{{old('card')}}"  required>
+                                <input id="card" maxlength="16"  type="number" class="form-control @error('card') is-invalid @enderror"  name="card" value="{{old('card')}}"  required>
 
                                 @error('card')
                                     <span class="invalid-feedback" role="alert">

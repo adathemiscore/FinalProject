@@ -37,7 +37,7 @@ class AuthController extends Controller
             'first_name'=>'required|string|max:20',
             'last_name'=>'required|string|max:30',
             'address'=>'required|string|max:50',
-            'phone'=>'required|string|max:15',
+            'phone'=>'required|numeric|max:999999999999999|gt:0',
             'role'=>'required',
             'gender'=>'required'
         ]);

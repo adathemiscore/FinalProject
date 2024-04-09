@@ -126,7 +126,7 @@
 
 @endif
 <div class="pricing-header pb-md-4 mx-auto text-center">
-  <h1 class="display-4 fw-normal text-body-emphasis">DashBoard</h1>
+  <h1 class="display-4 fw-normal text-body-emphasis">Project Stores</h1>
   <p class="fs-5 text-body-secondary">Welcome {{Sentinel::getUser()->first_name}} {{Sentinel::getUser()->last_name}} </p>
 
   <a  href="{{route('viewproductall')}}" class="btn btn-secondary">

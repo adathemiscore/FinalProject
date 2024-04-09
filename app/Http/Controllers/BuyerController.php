@@ -143,8 +143,12 @@ class BuyerController extends Controller
         // // dd($sumcart);
 
         $this->validate($request,[
-            'card'=>'required|numeric',
-        ]);
+            'name'=>'required|string|max:100',
+            'email'=>'required',
+            'address'=>'required|string|max:191',
+            'phone'=>'required|numeric|max:999999999999999|gt:0',
+            'card'=>'required|numeric|gt:0|max:9999999999999999',
+        ]);
 
         $purchaseid=$this->getTransactionID('purchase_id');
                 
